@@ -1,6 +1,6 @@
-var NodeGeocoder = require('node-geocoder');
+const NodeGeocoder = require('node-geocoder');
 
-var options = {
+const options = {
   provider: process.env.GEO_CODER_PROVIDER,
 
   // Optional depending on the providers
@@ -10,6 +10,6 @@ var options = {
 };
 
 
-const geoCoder = NodeGeocoder(options)
+const geocoder = NodeGeocoder(options)
 
-module.exports = geoCoder
+module.exports = geocoder;

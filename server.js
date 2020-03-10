@@ -11,8 +11,9 @@ connectDB();
 
 
 
-// Import bootcamp routes file
+// Import bootcamp, course routes file
 const bootcamp = require('./routes/bootcamp')
+const course   = require('./routes/course')
 
 
 
@@ -26,6 +27,7 @@ const app = express()
 app.use(express.json());
 
 app.use('/api/v1/bootcamps' , bootcamp)
+app.use('/api/v1/courses', course)
 
 // Error handler middleware
 
